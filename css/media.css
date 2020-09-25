@@ -1,0 +1,125 @@
+@media screen and (max-width: 992px){
+    /*home*/
+    .home-content h1{
+        font-size: 4.5rem;
+    }
+
+    /*service*/
+    .service-disc-content{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .service-item{
+       width: 50%;
+    }
+    .service-item i{
+        font-size: 3rem;
+        height: 5rem;
+        width: 6rem;
+        line-height: 5rem;
+    }
+    /*porto*/
+    .porto-item{
+        width: 50%;
+        margin-bottom: 2%;
+    }
+    .porto-item p{
+        bottom: 10%;
+    }
+}
+
+
+@media screen and  (max-width: 768px){
+    /*home*/
+    .home-content h1{
+        font-size: 3rem;
+    }
+    .home-content p{
+        font-size: 20px;
+    }
+    /*about*/
+    .about-content h2{
+        width: 80%;
+        margin: auto auto 15px auto;
+        line-height: 1.2;
+    }
+    .about-content p{
+        font-size: 15px;
+        width: 80%;
+        margin: auto auto 30px auto;
+        line-height: 1.6;
+        font-size: 18px;
+    }
+    /*service*/
+    .service-disc-content{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .service-item{
+       width: 50%;
+    }
+
+    /*porto*/
+    .porto-item{
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .porto-item p{
+        bottom: 10%;
+    }
+}
+
+
+@media screen and (max-width:400px){
+    /*home*/
+    .home-content h1{
+        font-size: 4rem;
+    }
+    .home-content p{
+        font-size: 23px;
+    }
+    /*about*/
+    .about-content h2{
+        font-size: 35px;
+        line-height: 1.2;
+    }
+    .about-content p{
+        font-size: 15px;
+        width: 70%;
+        margin: auto auto 30px auto;
+        line-height: 1.8;
+    }
+
+    /*service*/
+    .service-disc-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .service-item{
+        width: 100%;
+    }
+    /*web-style*/
+    .web-style h2{
+        font-size: 50px;
+        width: 93%;
+        margin:auto auto 3rem auto;
+    }
+    /*porto*/
+    .porto-item{
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .porto-item p{
+        bottom: 10%;
+    }
+    /*web-style-2*/
+    .web-style-2 button:nth-of-type(1){
+        margin-right: 8px;
+    }
+   
+}
+

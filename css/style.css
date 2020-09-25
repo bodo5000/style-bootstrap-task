@@ -1,0 +1,369 @@
+/*General*/
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.clear{
+    clear: both;
+}
+.pg{
+    padding: 120px 0;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 20px 35px;
+    border-radius: 3px;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color .5s
+}
+/*menu*/
+#chek{
+    display: none;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+.menu{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: #1d809f;
+    color: #fff;
+    right: -300px;
+    transition: all .5s ease; 
+    z-index: 111;
+    border-left: 1px solid rgb(163, 160, 160);
+}
+.logo{
+    cursor: pointer;
+}
+.chek{
+    position: fixed;
+    top: 15px;
+    right: 26px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 3px;
+    background-color:rgba(52,58,64,.5);
+    line-height: 50px;
+    z-index: 1;
+    cursor: pointer;
+    transition: background-color .5s ;
+}
+.chek:hover{
+    background-color: rgba(52,58,64,1);
+}
+
+.menu .logo{
+    padding: 25px 12px;
+    background-color:rgba(52,58,64,.1);
+    font-size: 17px;
+    font-weight: 300px;
+}
+
+.menu li a{
+    display: block;
+    color: #fff;
+    font-size: 17px;
+    padding: 22px 12px;
+}
+.menu li:hover a{
+    background-color: rgba(52,58,64,.3);
+}
+#chek:checked ~ .menu{
+   right:0;
+}
+/*home*/
+.home{
+    background-image: url(../images/bg-masthead.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover ;
+    height: 100vh;
+}
+
+.home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #212529;
+}
+
+.home-content h1{
+    font-size: 5.5rem;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.home-content p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 50px
+}
+.home-content button,
+.web-style button{
+    background-color: rgba(4, 117, 230, 0.705); 
+}
+.home-content button:hover,
+.web-style button:hover{
+    background-color: rgba(4, 117, 230, 1);
+}
+/*about*/
+.about-content{
+    text-align: center;
+}
+
+.about-content h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.about-content p{
+    font-size: 18px;
+    color:  #626a72 ;
+    margin-bottom: 40px;
+}
+.about-content p span{
+    color: #1d809f;
+    cursor: pointer;
+}
+.about-content p span:hover{
+    text-decoration: underline;
+}
+
+
+.about-content button{
+    background-color:rgba(66, 61, 61, 0.726);
+}
+
+.about-content button:hover{
+    background-color: #333;
+}
+/*service*/
+.service{
+    background-color: #1d809f;
+    padding: 80px 0;
+}
+.service-disc-header, /*for sevice and porto*/
+.porto-disc-header{
+    text-align: center;
+}
+
+.service-disc-header span, /*for sevice and porto*/
+.porto-disc-header span{
+    color:#ecb807;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.service-disc-header h2{
+    font-size: 45px;
+    color: #fff;
+    word-spacing: 2px;
+}
+.service-disc-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-item{
+    padding: 40px 10px;
+    text-align: center;
+    width: 23%;
+}
+
+.service-item i{
+    margin: auto;
+    text-align: center;
+    display: block;
+    background-color: #fff;
+    font-size: 3rem;
+    color:#1d809f;
+    height: 7rem;
+    width: 6rem;
+    line-height: 7rem;
+    border-radius: 50%;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.service-item h3{
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.service-item span{
+    color: rgba(255,255,255,.7);
+}
+/*web-style*/
+.web-style{
+    padding: 15rem 0;
+    background-image: url(../images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: auto;
+    text-align: center;
+}
+
+.web-style h2{
+    font-size: 3.5rem;
+    color:#212529;
+    margin-bottom: 3rem;
+}
+
+/*porto*/
+.porto-disc-header{
+    margin-bottom: 40px;
+}
+.porto-disc-header h2{
+    font-size: 45px;
+    color: #333;
+}
+
+.porto-item{
+    position: relative;
+    width: 50%;
+    float: left;
+    height: 300px;
+    cursor: pointer;
+    color: #fff;
+    transition: transform .5s ease-in-out;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+    z-index: -1;
+    background-color:rgba(19, 116, 214, .7);
+}
+.porto-item:hover .overlay{
+    opacity: 1;
+}
+.porto-item:hover{
+    transform: scale(.8);
+}
+.porto-item h2{
+    position: absolute;
+    margin-bottom: 15px;
+    bottom: 32%;
+    left: 18%;
+    font-size: 35px;
+}
+.porto-item p{
+    position: absolute;
+    line-height: 1.6;
+    width: 70%;
+    bottom: 17%;
+    left: 15%;
+    color:rgba(255,255,255,.7);
+}
+.img1, .img2 ,.img3 ,.img4{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.img1{
+    background-image: url(../images/portfolio-1.jpg);
+}
+.img2{
+    background-image: url(../images/portfolio-2.jpg);
+}
+.img3{
+    background-image: url(../images/portfolio-3.jpg);
+}
+.img4{
+    background-image: url(../images/portfolio-4.jpg);
+}
+
+/*web-style-2*/
+.web-style-2{
+    background-color: #1d809f;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.web-style-2 h2{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.web-style-2 button:nth-of-type(1){
+    color: #212529;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.web-style-2 button:nth-of-type(2){
+    background-color: #343a40;
+    
+    color: #fff;
+}
+.web-style-2 button:nth-of-type(1),
+.web-style-2 button:nth-of-type(2){
+    opacity: .8;
+    transition: opacity .5s;
+}
+.web-style-2 button:nth-of-type(1):hover,
+.web-style-2 button:nth-of-type(2):hover{
+    opacity: 1;
+}
+.map iframe{
+    display: block;
+    width: 100%;
+    height: 400px;
+}
+
+/*footer*/
+footer{
+    text-align: center;
+}
+
+footer a{
+    margin: 0 15px 50px 15px;
+    display: inline-block;
+    background-color: #1d809f;
+    color: #fff;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    border-radius: 50%;
+    opacity: .8;
+    transition: opacity .5s;
+}
+footer a:hover{
+    opacity: 1;
+}
+
+footer span{
+    font-size: 13px;
+    color:#999;
+    font-weight: lighter;
+}
+
